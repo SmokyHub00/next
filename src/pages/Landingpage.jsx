@@ -2,7 +2,10 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Tools from "../components/Tools";
+import Brands from "../components/brands";
+import Solutions from "../components/solutions";
 import FAQ from "../components/Faq";
+import Connect from "../components/connect";
 import Footer from "../components/Footer";
 
 export default function LandingPage() {
@@ -12,7 +15,10 @@ export default function LandingPage() {
       <Hero />
       <Features />
       <Tools />
+      <Brands />
+      <Solutions />
       <FAQ />
+      <Connect />
       <Footer />
     </>
   );
