@@ -1,101 +1,76 @@
-import React, { useState } from "react";
-import solutionsImg from "../assets/solutions.png";
+import React from 'react';
+import brand1 from '../assets/brand1.png';
+import brand2 from '../assets/brand2.png';
+import brand3 from '../assets/brand3.png';
 
-const SolutionsSection = () => {
-    const [activeTab, setActiveTab] = useState(0);
-
-    const tabs = [
-        {
-            title: "Your files, all in one place",
-            description: (
-                <>
-                    Edit and organize <span className="text-blue-600 cursor-pointer">Google Docs</span>,{" "}
-                    <span className="text-blue-600 cursor-pointer">Sheets</span>,{" "}
-                    <span className="text-blue-600 cursor-pointer">Slides</span>, Microsoft Office files, and
-                    PDFs in real-time. Plus, access over 100 other file types!
-                </>
-            ),
-        },
-        { title: "Annotate PDFs", description: "Quickly highlight and comment on PDF documents directly in your browser." },
-        { title: "AI-powered search", description: "Find exactly what you need across all your files using Google's powerful search AI." },
-        { title: "Activity view", description: "See who made changes and when, keeping your team's progress transparent." },
-    ];
-
+const Solutions = () => {
     return (
-        <section className="py-16 px-4 bg-white font-sans overflow-hidden">
-            <div className="max-w-7xl mx-auto">
+        <section className="w-full py-16 flex justify-center bg-white font-['Helvetica_Now_Display']">
+            <div className="w-full max-w-[1196px] px-4 flex flex-col items-center gap-1">
 
-                {/* Header Section */}
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#202124] mb-4">
-                        Brands using Google Workspace to <br className="hidden md:block" />
-                        succeed online, <span className="text-[#4285F4]">कसरी?</span>
+                {/* Header */}
+                <div className="text-center flex flex-col items-center gap-2">
+                    <h2 className="text-3xl md:text-[46px] font-medium flex flex-col items-center gap-2 leading-tight text-[#202124]">
+                        Solutions for businesses,
+                        <span className="text-[#1a73e8]">साना देखि ठूला सबैका लागि</span>
                     </h2>
-                    <p className="text-[#5F6368] text-lg md:text-xl">
-                        कसरी teams Google Workspace सँग productivity <br className="hidden md:block" />
-                        बढाउँछन् र समय बचत गर्छन्
+                    <p className="text-[#5f6368] text-lg md:text-xl max-w-3xl mt-4 text-center">
+                        No matter the size, Google Workspace ले तपाईको business को सबै needs पूरा गर्छ
                     </p>
                 </div>
 
-                {/* Content Grid */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-0">
 
-                    {/* Left Side: Dynamic Image Area */}
-                    <div className="flex-1 w-full flex justify-center items-center relative">
-                        {/* Subtle Gradient Glow Background */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 via-purple-50 to-pink-50 opacity-60 blur-3xl -z-10 rounded-full" />
-
-                        <img
-                            src={solutionsImg}
-                            alt="Google Workspace Solutions"
-                            className="w-full max-w-[550px] h-auto object-contain transition-all duration-500 transform hover:scale-105"
-                        />
+                    {/* Card 1 - Enterprise */}
+                    <div className="flex flex-col gap-6 p-4 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div className="w-full h-[160px] flex items-center justify-center bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+                            <img src={brand1} alt="Enterprise Solutions" className="w-auto h-full object-contain p-4" />
+                        </div>
+                        <div className="flex flex-col gap-3 text-center">
+                            <h3 className="text-xl font-bold text-[#202124]">For enterprise</h3>
+                            <p className="text-[#5f6368] text-sm leading-relaxed opacity-100">
+                                Secure collaboration <span className="text-[#1a73e8]">tools for enterprise</span>, with premium AI and enterprise-grade security built in for all the ways work is changing.
+                            </p>
+                        </div>
                     </div>
 
-                    {/* Right Side: Vertical Tabs */}
-                    <div className="flex-1 w-full max-w-lg">
-                        <div className="space-y-6">
-                            {tabs.map((tab, index) => (
-                                <div
-                                    key={index}
-                                    onClick={() => setActiveTab(index)}
-                                    className="cursor-pointer group"
-                                >
-                                    <div className="flex items-start">
-                                        {/* Active Indicator Line */}
-                                        <div
-                                            className={`w-[3px] h-auto self-stretch mr-4 transition-colors duration-300 ${activeTab === index ? "bg-[#4285F4]" : "bg-gray-200 group-hover:bg-gray-300"
-                                                }`}
-                                        />
+                    {/* Card 2 - Small Business (Active/Highlighted) */}
+                    <div className="flex flex-col gap-6 relative p-4">
+                        {/* Dotted Blue Border Container for Image */}
+                        <div className="w-full md:w-[370px] h-[160px] mx-auto flex items-center justify-center bg-white rounded-2xl overflow-hidden shadow-sm relative z-10">
+                            <img src={brand2} alt="Small Business Solutions" className="w-auto h-full object-cover" />
+                        </div>
 
-                                        <div className="py-1">
-                                            <h3
-                                                className={`text-xl md:text-2xl font-medium transition-colors duration-300 ${activeTab === index ? "text-[#202124]" : "text-[#5F6368]"
-                                                    }`}
-                                            >
-                                                {tab.title}
-                                            </h3>
+                        {/* Blue Border Wrapper for the whole card content if needed, strictly following 'middle' highlight implies focus */}
+                        <div className="flex flex-col gap-3 text-center px-4">
+                            <h3 className="text-xl font-bold text-[#202124]">For small business</h3>
+                            <p className="text-[#5f6368] text-sm leading-relaxed opacity-100">
+                                Tools for <span className="text-[#1a73e8]">small businesses</span> that help teams and <span className="text-[#1a73e8]">individuals</span> with everyday tasks like scheduling appointments and email marketing.
+                            </p>
+                        </div>
 
-                                            {/* Description - Only shows when active */}
-                                            <div
-                                                className={`overflow-hidden transition-all duration-500 ease-in-out ${activeTab === index ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
-                                                    }`}
-                                            >
-                                                <p className="text-[#5F6368] leading-relaxed text-base md:text-lg">
-                                                    {tab.description}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
+
+                    </div>
+
+                    {/* Card 3 - New Business */}
+                    <div className="flex flex-col gap-6 p-4 rounded-2xl hover:bg-gray-50 transition-colors">
+                        <div className="w-full h-[160px] flex items-center justify-center bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+                            <img src={brand3} alt="New Business Solutions" className="w-auto h-full object-contain p-4" />
+                        </div>
+                        <div className="flex flex-col gap-3 text-center">
+                            <h3 className="text-xl font-bold text-[#202124]">For new business</h3>
+                            <p className="text-[#5f6368] text-sm leading-relaxed opacity-100">
+                                Essentials tools for <span className="text-[#1a73e8]">new businesses</span> and <span className="text-[#1a73e8]">startups</span>, including business email domains, online file sharing and storage, and more.
+                            </p>
                         </div>
                     </div>
 
                 </div>
+
             </div>
         </section>
     );
 };
 
-export default SolutionsSection;
+export default Solutions;

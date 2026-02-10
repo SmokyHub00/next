@@ -82,7 +82,7 @@ const Features = () => {
 
       {/* --- Main Headline --- */}
       <div className="text-center mb-8">
-        <h2 className="text-[24px] md:text-[38px] leading-tight font-normal mb-2">
+        <h2 className="text-[32px] md:text-[46px] leading-tight font-medium mb-2">
           <span className="text-black">के</span>{" "}
           <span className="text-[#1A73E8] font-medium">Google Workspace</span>{" "}
           <span className="text-black">तपाईको</span>

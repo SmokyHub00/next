@@ -15,8 +15,8 @@ export default function LandingPage() {
       <Hero />
       <Features />
       <Tools />
-      <Brands />
       <Solutions />
+      <Brands />
       <FAQ />
       <Connect />
       <Footer />

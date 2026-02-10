@@ -49,40 +49,40 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="absolute top-[36px] left-[112px] w-[1306px] h-[76.3px] bg-white flex justify-between items-center px-6 rounded-md
+    <div className="absolute top-[36px] left-[112px] w-[1306px] h-[90px] bg-white flex justify-between items-center px-8 rounded-md
       max-sm:static max-sm:w-full max-sm:h-auto max-sm:px-4 max-sm:py-3 max-sm:rounded-none max-sm:flex-wrap max-sm:gap-y-4">
 
       {/* Left Section - Logo & Partner (Mobile: Order 1) */}
       <div className="flex items-center space-x-3 max-sm:space-x-2 max-sm:order-1">
-        <img src="/public.png" alt="Nest Nepal Logo" className="h-10 max-sm:h-6" />
-        <div className="w-[1px] h-8 max-sm:h-6 block bg-gradient-to-b from-[#EA4335] via-[#FBBC05] via-[#34A853] to-[#4285F4]"></div>
+        <img src="/public.png" alt="Nest Nepal Logo" className="h-12 max-sm:h-8" />
+        <div className="w-[1px] h-10 max-sm:h-6 block bg-gradient-to-b from-[#EA4335] via-[#FBBC05] via-[#34A853] to-[#4285F4]"></div>
 
         <div className="flex flex-col items-start pl-2 max-sm:pl-1">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
             alt="Google Cloud"
-            className="h-5 max-sm:h-3"
+            className="h-6 max-sm:h-4"
           />
-          <span className="text-gray-400 text-xs max-sm:text-[9px] font-medium mt-[-2px] ml-[34px] max-sm:ml-[22px]">Partner</span>
+          <span className="text-gray-400 text-sm max-sm:text-[10px] font-medium mt-[-2px] ml-[34px] max-sm:ml-[22px]">Partner</span>
         </div>
       </div>
 
       {/* Center Countdown (Desktop: Center, Mobile: Order 3 / Row 2) */}
       <div className="text-center max-sm:order-3 max-sm:w-full max-sm:mt-2">
-        <p className="text-[#E75480] text-lg font-medium italic" style={{ fontFamily: '"Dancing Script", cursive' }}>
+        <p className="text-[#E75480] text-4xl font-bold italic" style={{ fontFamily: '"Dancing Script", cursive' }}>
           Valentine’s OFFER
         </p>
         <div className="flex items-center justify-center space-x-2 mt-0">
           {['days', 'hours', 'minutes', 'seconds'].map((unit, idx) => (
             <React.Fragment key={unit}>
-              <div className="text-[#0D47A1] font-bold text-2xl max-sm:text-xl">
+              <div className="text-[#1A73E8] font-bold text-3xl max-sm:text-xl">
                 {String(timeLeft[unit]).padStart(2, '0')}
               </div>
-              {idx !== 3 && <span className="text-[#E75480] font-bold text-xl max-sm:text-lg">:</span>}
+              {idx !== 3 && <span className="text-[#E75480] font-bold text-2xl max-sm:text-lg">:</span>}
             </React.Fragment>
           ))}
         </div>
-        <div className="text-[10px] text-gray-500 flex justify-center space-x-5 mt-0 font-medium tracking-wide">
+        <div className="text-sm text-gray-600 flex justify-center space-x-5 mt-0 font-bold tracking-wide">
           <span>Days</span>
           <span>Hrs</span>
           <span>Min</span>
@@ -92,10 +92,11 @@ const Navbar = () => {
 
       {/* Right WhatsApp Button (Desktop: Right, Mobile: Order 2 / Row 1) */}
       <button className="flex items-center space-x-2 bg-[#E8F5E9] border border-[#4CAF50] hover:bg-[#d0f0d0] text-[#2E7D32]
-        px-4 py-2 max-sm:px-2 max-sm:py-1 rounded-full text-sm max-sm:text-xs font-medium transition max-sm:order-2 whitespace-nowrap">
-        <FaWhatsapp className="text-[#4CAF50] text-lg max-sm:text-sm" />
+px-6 py-3 max-sm:px-2 max-sm:py-1 rounded-md text-base max-sm:text-xs font-medium transition max-sm:order-2 whitespace-nowrap">
+        <FaWhatsapp className="text-[#4CAF50] text-2xl max-sm:text-sm" />
         <span>Contact Sales</span>
       </button>
+
 
     </div>
   );

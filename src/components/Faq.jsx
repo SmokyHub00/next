@@ -10,8 +10,8 @@ const Faq = () => {
   };
 
   return (
-    <section className="py-12 md:py-24 px-4 w-full max-w-[752px] mx-auto font-['Helvetica_Now_Display']">
-      <h2 className="text-[24px] md:text-[36px] font-normal text-center mb-[40px] md:mb-[60px] leading-tight">
+    <section className="py-4 md:py-8 px-4 w-full max-w-[752px] mx-auto font-['Helvetica_Now_Display']">
+      <h2 className="text-[32px] md:text-[46px] font-medium text-center mb-[40px] md:mb-[60px] leading-tight">
         <span className="text-black">Frequently Asked Questions</span>{" "}
         <span className="text-[#1A73E8]">(FAQs)</span>
       </h2>

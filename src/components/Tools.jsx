@@ -32,7 +32,7 @@ const Tools = () => {
 
         {/* Headline */}
         <div className="flex flex-col items-center gap-1">
-          <h2 className="text-2xl md:text-3xl font-bold text-black">
+          <h2 className="text-2xl md:text-[46px] font-medium text-black">
             <span className="text-[#0234F8]">सबै</span> Tools <span className="text-[#0234F8]">एउटै</span> Platform मा
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-[#0234F8]">

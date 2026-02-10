@@ -5,7 +5,7 @@ import girl from "../assets/girl.png";
 
 const Connect = () => {
     return (
-        <section className="py-8 md:py-12 px-4 font-['Helvetica_Now_Display'] max-w-[1100px] mx-auto">
+        <section className="py-2 md:py-4 px-4 font-['Helvetica_Now_Display'] max-w-[1100px] mx-auto">
             <div className="rounded-[24px] bg-[#F8F9FA] overflow-hidden relative flex flex-col md:flex-row items-stretch min-h-[400px]">
 
                 {/* Left Content Section */}
@@ -40,7 +40,7 @@ const Connect = () => {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-[#333333] text-[24px] md:text-[36px] font-bold leading-tight mb-3 md:mb-5">
+                    <h2 className="text-[#333333] text-[32px] md:text-[46px] font-medium leading-tight mb-3 md:mb-5">
                         Prefer to talk to sales directly?
                     </h2>
 
