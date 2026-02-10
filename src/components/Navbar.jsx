@@ -54,7 +54,7 @@ const Navbar = () => {
 
       {/* Left Section - Logo & Partner (Mobile: Order 1) */}
       <div className="flex items-center space-x-3 max-sm:space-x-2 max-sm:order-1">
-        <img src="/public.png" alt="Nest Nepal Logo" className="h-12 max-sm:h-8" />
+        <img src="/public.png" alt="Nest Nepal Logo" className="h-12 max-sm:h-6" />
         <div className="w-[1px] h-10 max-sm:h-6 block bg-gradient-to-b from-[#EA4335] via-[#FBBC05] via-[#34A853] to-[#4285F4]"></div>
 
         <div className="flex flex-col items-start pl-2 max-sm:pl-1">
