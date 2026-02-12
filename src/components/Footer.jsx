@@ -6,14 +6,14 @@ const Footer = () => {
       <div className="relative w-full max-w-[1492px] min-h-[400px] rounded-[12px] text-white overflow-hidden font-['Helvetica_Now_Display']"
         style={{ background: 'radial-gradient(90.1% 111.19% at 50% 50%, #0234F8 0%, #011F92 100%)' }}>
 
-        {/* Background "Invisible" Text - Desktop (Horizontal) */}
-        <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
+        {/* Background "Invisible" Text - Tablet/Desktop (Horizontal) */}
+        <div className="hidden sm:flex absolute inset-0 items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
           <span
-            className="font-bold text-transparent whitespace-nowrap opacity-50 leading-none tracking-tighter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="font-bold text-transparent whitespace-nowrap opacity-20 md:opacity-50 leading-none tracking-tighter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{
               fontFamily: 'Manrope, sans-serif',
-              fontSize: '200px',
-              WebkitTextStroke: '2px rgba(255, 255, 255, 0.5)',
+              fontSize: 'min(20vw, 200px)',
+              WebkitTextStroke: '2px rgba(255, 255, 255, 0.4)',
               maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
               WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)'
             }}
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
 
         {/* Background "Invisible" Text - Mobile (Vertical) */}
-        <div className="md:hidden absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+        <div className="sm:hidden absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
           <span
             className="font-bold text-transparent whitespace-nowrap opacity-50 absolute right-[-40px] top-1/2 -translate-y-1/2 -rotate-90 origin-center leading-none"
             style={{
@@ -40,7 +40,7 @@ const Footer = () => {
 
 
         {/* Main Content Container */}
-        <div className="relative z-10 w-full h-full flex flex-col justify-between p-6 md:p-8">
+        <div className="relative z-10 w-full h-full flex flex-col justify-between p-6 md:p-10 lg:p-12">
 
           {/* Top Section */}
           <div className="flex flex-col md:flex-row justify-between items-start">
