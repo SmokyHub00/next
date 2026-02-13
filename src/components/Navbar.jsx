@@ -52,7 +52,7 @@ const Navbar = () => {
     <div className="absolute top-[36px] left-[112px] w-[1306px] h-[90px] bg-white flex justify-between items-center px-8 rounded-md
       max-sm:static max-sm:w-full max-sm:h-auto max-sm:px-4 max-sm:py-3 max-sm:rounded-none max-sm:flex-wrap max-sm:gap-y-4">
 
-      {/* Left Section - Logo & Partner (Mobile: Order 1) */}
+      {/* Left Section */}
       <div className="flex items-center space-x-3 max-sm:space-x-2 max-sm:order-1">
         <img src="/public.png" alt="Nest Nepal Logo" className="h-12 max-sm:h-6" />
         <div className="w-[1px] h-10 max-sm:h-6 block bg-gradient-to-b from-[#EA4335] via-[#FBBC05] via-[#34A853] to-[#4285F4]"></div>
@@ -67,10 +67,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Center Countdown (Desktop: Center, Mobile: Order 3 / Row 2) */}
+      {/* Center Countdown */}
       <div className="text-center max-sm:order-3 max-sm:w-full max-sm:mt-2">
         <p className="text-[#E75480] text-4xl font-bold italic" style={{ fontFamily: '"Dancing Script", cursive' }}>
-          Valentine’s OFFER
+          Valentine’s OFFER! GRAB FAST
         </p>
         <div className="flex items-center justify-center space-x-2 mt-0">
           {['days', 'hours', 'minutes', 'seconds'].map((unit, idx) => (
